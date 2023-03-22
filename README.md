@@ -1,6 +1,6 @@
 # asn
 
-This is a simple Go program that extracts the subnets associated with a given Autonomous System Number (ASN) from the IP2Location website. 
+This is a simple Go program that extracts the subnets associated with a given Autonomous System Number (ASN) from the IP2Location website.
 
 The program takes the ASN as a command-line argument and outputs a list of subnets associated with that ASN.
 
