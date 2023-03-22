@@ -22,8 +22,10 @@ To run the program, simply type `asn` followed by the ASN as the argument. For e
 asn 15169
 ```
 
+The program normalizes the ASN to ensure that it has the correct format, so you can use `15169`, `AS15169`, or `as15169` as input. 
+
+If the program cannot find any subnets associated with the specified ASN, it will output an error message.
+
 ## How it works
 
 The program uses the Go `net/http` package to make a GET request to the IP2Location website with the specified ASN. It then reads the response and extracts the subnets using regular expressions. Finally, it outputs the subnets to the console.
-
-Note that the program normalizes the ASN to ensure that it has the correct format (i.e., starts with "AS"). If the program cannot find any subnets associated with the specified ASN, it will output an error message.
