@@ -30,7 +30,9 @@ To print the IP addresses associated with the specified ASN, use the `-ips` flag
 asn -ips 15169
 ```
 
-If the program cannot find any subnets or IP addresses associated with the specified ASN, it will output an error message.
+If the program cannot find the ASN at all, it will output an error message.
+
+If the program cannot find any subnets associated with the specified ASN, it will output nothing.
 
 ## How it works
 
