@@ -4,30 +4,22 @@ This is a simple Go program that extracts the subnets associated with a given Au
 
 The program takes the ASN as a command-line argument and outputs a list of subnets associated with that ASN.
 
-## Usage
+## Installation
 
-To use this program, you must have Go installed on your system. To run the program, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/melvinsh/asn.git`
-2. Navigate to the repository directory: `cd asn`
-3. Build the program: `go build`
-4. Run the program with an ASN as the argument: `./asn <ASN>`
-
-For example, to get the subnets for ASN 15169 (Google):
+To install this program, you must have Go installed on your system. You can install the program using the following command:
 
 ``` bash
-$ ./asn 15169
-8.8.4.0/24
-8.8.8.0/24
-8.35.200.0/21
-34.0.96.0/19
-34.0.160.0/19
-34.3.3.0/24
-34.4.4.0/24
-34.143.64.0/19
-34.144.0.0/20
-34.144.128.0/17
-34.149.0.0/16
+go install github.com/melvinsh/asn@latest
+```
+
+This will download the source code, build the program, and install it in your `$GOPATH/bin` directory. Make sure that `$GOPATH/bin` is in your `$PATH` environment variable so that you can run the program from anywhere.
+
+## Usage
+
+To run the program, simply type `asn` followed by the ASN as the argument. For example, to get the subnets for ASN 15169 (Google), you would run:
+
+``` bash
+asn 15169
 ```
 
 ## How it works
