@@ -16,15 +16,21 @@ This will download the source code, build the program, and install it in your `$
 
 ## Usage
 
-To run the program, simply type `asn` followed by the ASN as the argument. For example, to get the subnets for ASN 15169 (Google), you would run:
+To run the program and look up the ASN, simply type `asn` followed by the ASN as the argument. For example, to look up the ASN for 15169 (Google), you would run:
 
 ``` bash
 asn 15169
 ```
 
-The program normalizes the ASN to ensure that it has the correct format, so you can use `15169`, `AS15169`, or `as15169` as input. 
+The program normalizes the ASN to ensure that it has the correct format, so you can use `15169`, `AS15169`, or `as15169` as input.
 
-If the program cannot find any subnets associated with the specified ASN, it will output an error message.
+To print the IP addresses associated with the specified ASN, use the `-ips` flag. For example:
+
+``` bash
+asn -ips 15169
+```
+
+If the program cannot find any subnets or IP addresses associated with the specified ASN, it will output an error message.
 
 ## How it works
 
