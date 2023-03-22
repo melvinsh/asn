@@ -15,7 +15,7 @@ func main() {
 	flag.Parse()
 
 	if len(flag.Args()) < 1 {
-		fmt.Fprintln(os.Stderr, "Usage: go run main.go [-ips] <ASN>")
+		fmt.Fprintln(os.Stderr, "Usage: asn [-ips] <ASN>")
 		return
 	}
 
