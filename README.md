@@ -20,17 +20,17 @@ This will download the source code, build the program, and install it in your `$
 
 To run the program and look up the ASN, simply type `asn` followed by the ASN as the argument. For example, to look up the ASN for 15169 (Google):
 
-<img src="https://user-images.githubusercontent.com/1312973/232168367-537b520e-954b-4f5c-948c-ca9ea910861e.png" width="30%" />
+<img src="https://user-images.githubusercontent.com/1312973/232168367-537b520e-954b-4f5c-948c-ca9ea910861e.png" width="70%" />
 
 The program normalizes the ASN to ensure that it has the correct format, so you can use `15169`, `AS15169`, or `as15169` as input.
 
 To print the IP addresses associated with the specified ASN, use the `-ips` flag. For example:
 
-<img src="https://user-images.githubusercontent.com/1312973/232168421-cb4e2289-8927-4639-81ec-89d8317ce53b.png" width="30%" />
+<img src="https://user-images.githubusercontent.com/1312973/232168421-cb4e2289-8927-4639-81ec-89d8317ce53b.png" width="70%" />
 
 If the program cannot find the ASN at all, it will output an error message.
 
-<img src="https://user-images.githubusercontent.com/1312973/232168459-5d9f2084-2899-48a7-962f-72920cb63686.png" width="30%" />
+<img src="https://user-images.githubusercontent.com/1312973/232168459-5d9f2084-2899-48a7-962f-72920cb63686.png" width="70%" />
 
 If the program cannot find any subnets associated with the specified ASN, it will output nothing.
 
