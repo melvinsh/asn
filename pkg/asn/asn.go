@@ -29,7 +29,7 @@ func FindSubnets(asn string) ([]string, error) {
 		return nil, err
 	}
 
-	re := regexp.MustCompile(`href="/demo/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})">(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\/\d{1,2})</a>`)
+	re := regexp.MustCompile(`href="/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})">(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\/\d{1,2})</a>`)
 	matches := re.FindAllStringSubmatch(string(body), -1)
 	for _, match := range matches {
 		subnets = append(subnets, match[2])
